@@ -1,0 +1,135 @@
+:root {
+    --bg-color: rgba(227, 221, 221, 0.872);
+    --btn-color: #907162;
+}
+
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.orange600 { color: #FB8C00; }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	scroll-behavior: smooth;    
+    background-color: var(--bg-color);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    position: fixed;
+    background-color: var(--bg-color);
+    width: 100%;
+    top: 0;
+}
+
+#header-img {
+    width: 22rem;
+    margin-right: 48rem;
+    position: relative;
+}
+
+.nav-list {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;  
+    position: relative;
+}
+
+.nav-link {
+    margin-right: 4rem;    
+    padding: 10px;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: var(--btn-color);
+    border-radius: 8px;
+    color: white;
+}
+
+.hero-section {
+    margin: 6rem 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    padding: 2rem;
+}
+
+.btn {
+    background-color: var(--btn-color);
+    border-radius: 8px;
+    height: 40px;
+    width: 100px;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.feature {
+    padding: 2rem;
+}
+
+#email {
+    padding: 0.5rem;
+}
+
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing {
+    padding: 2rem;
+    display: flex;
+}
+
+p {
+    padding: 0.3rem;
+}
+
+.price-info {
+    background-color: #d6a66b;
+    border-radius: 18px;
+    padding: 12px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.footer__list {
+    list-style: none;
+}
+
+.footer__item {
+    display: inline-block;
+    padding: 0 24px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+    scroll-behavior: smooth;
+    }
+}
